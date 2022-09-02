@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
     --white-color: #fff;
@@ -16,7 +15,6 @@
 
 
 .login-background {
-    font-family: 'Open Sans', sans-serif;
 
     height: 750px;
     position: relative;
@@ -222,7 +220,6 @@
 .dropdown-container {
     position: relative;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
 
     .dropdown-btn {
         .dropdown-btn--avatar {
@@ -294,7 +291,6 @@
 
 //ForgotPassword
 .container-forgotPassword {
-    font-family: 'Open Sans', sans-serif;
     padding: 32px;
 
     .forgotPassword-logo {

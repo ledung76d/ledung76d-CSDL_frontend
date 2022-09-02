@@ -139,9 +139,9 @@ class Login extends Component {
                         <>
                             <div className='dropdown-container' onMouseOver={() => this.hanldeShowUserOption()} onMouseOut={() => this.handleOnMouseOut()}>
                                 <div className='dropdown-btn' >
-                                    <img 
-                                        src={this.props.userInfo.image} alt="Avatar" className='dropdown-btn--avatar' 
-                                        // alt="https://pickbazar-react-rest.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fsrc%2Fassets%2Fplaceholders%2Favatar.2a4ed68cad8ebe21317b04e155b6b245.svg&w=1920&q=75"
+                                    <img
+                                        src={this.props.userInfo.image} alt="Avatar" className='dropdown-btn--avatar'
+                                    // alt="https://pickbazar-react-rest.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fsrc%2Fassets%2Fplaceholders%2Favatar.2a4ed68cad8ebe21317b04e155b6b245.svg&w=1920&q=75"
                                     />
                                 </div>
                                 <div className={this.state.isShowUserOption ? 'dropdown-box' : 'dropdown-box display-none'}>
@@ -167,8 +167,7 @@ class Login extends Component {
                             className="btn btn-danger"
                             style={{ width: '50px', height: '30px', fontSize: '14px', backgroundColor: '#009F7F' }}
                             onClick={() => this.handleShowLogin()} >
-
-                            Join
+                            Login
                         </button>}
                     <Modal funk='true' isOpen={this.state.modal} toggle={() => this.setState({ modal: !this.state.modal })} className={'abcModalClass'} >
                         {!this.state.isShowModalForgotPassword ?
@@ -239,7 +238,7 @@ class Login extends Component {
                                         </div>
                                         <div className='login-register-user '>
                                             <span>Don't have any account?</span>
-                                            <Link  path='/register' onClick={() => this.setState({ modal: !this.state.modal })}>Register</Link>
+                                            <Link to='/register' path='/register' onClick={() => this.setState({ modal: !this.state.modal })}>Register</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -273,11 +272,7 @@ class Login extends Component {
                                 </div>
 
                             </div>
-
-
                         }
-
-
                     </Modal>
                 </div >
 

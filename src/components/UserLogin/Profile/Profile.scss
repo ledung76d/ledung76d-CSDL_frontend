@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
     --white-color: #fff;
@@ -11,7 +10,6 @@
 }
 
 .container__profile {
-    font-family: 'Open Sans', sans-serif;
     padding-top: 90px;
     background-color: var(--gray-color);
     height: 1300px;
@@ -313,7 +311,6 @@
     background-color: var(--white-color);
     border-radius: 8px;
     padding: 32px;
-    font-family: 'Open Sans', sans-serif;
 
     .profile__update-contact-title {
         text-align: center;
@@ -358,7 +355,6 @@
     padding: 32px;
     display: flex;
     flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
 
     .form__address-title {
         font-size: 18px;
