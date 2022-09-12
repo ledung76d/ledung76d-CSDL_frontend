@@ -6,6 +6,7 @@ import './NavigatorBar.scss';
 import LogoShop from '../../assets/images/PickBazar.png';
 import Login from '../Auth/Login';
 import { Link } from 'react-router-dom'
+import LoginIcon from '../Auth/LoginIcon';
 
 class NavigatorBar extends Component {
     constructor(props) {
@@ -57,74 +58,75 @@ class NavigatorBar extends Component {
         //JSX
         return (
             <>
+                <div className='app'>
+                    <header className="header">
+                        <div className="">
+                            <nav className="header__navbar">
+                                <ul className="header__navlist-list">
+                                    <li className="header__navbar-item header__navbar-item--separate">
+                                        <Link to='/' >
+                                            <img className='header__navbar-item-logo' src={LogoShop} />
+                                        </Link>
+                                    </li>
 
-                <header className="header">
-                    <div className="">
-                        <nav className="header__navbar">
-                            <ul className="header__navlist-list">
-                                <li className="header__navbar-item header__navbar-item--separate">
-                                    <Link to='/' >
-                                        <img className='header__navbar-item-logo' src={LogoShop} />
-                                    </Link>
+                                </ul>
+
+                                <ul className="header__navlist-list">
+                                    <li className="header__navbar-item">
+                                        <Link to={'/'} className="header__navbar-item-link"><span>Shops</span></Link>
+                                    </li>
+                                    <li className="header__navbar-item">
+                                        <a href="" className="header__navbar-item-link">
+                                            <span>Offers</span>
+                                        </a>
+                                    </li>
+                                    <li className="header__navbar-item header__navbar-item--separate">
+
+                                        <Link to={'/faq'} className="header__navbar-item-link"><span>FAQ</span></Link>
+
+                                    </li>
+                                    <li className="header__navbar-item ">
+                                        <Link to={'/contact'} className="header__navbar-item-link" >
+                                            <span>Contact</span>
+                                        </Link>
+                                    </li>
+                                    <li className="header__navbar-item text--strong">
+                                        {/* <button type="button" className="btn btn-danger" style={{width: '50px',height: '30px'}} onClick={()=>this.handleShowLogin()} >Join</button> */}
+                                        <Login />
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </header>
+
+
+
+                    <footer className="footer">
+                        <nav className='bottom__navbar'>
+                            <ul className='navbar__list'>
+                                <li className='navbar__list-item'>
+                                    <i className="fas fa-bars"></i>
+                                </li>
+                                <li className='navbar__list-item'>
+                                    <i className="fas fa-search"></i>
+                                </li>
+                                <li className='navbar__list-item'>
+                                    <i className="fas fa-home"></i>
                                 </li>
 
-                            </ul>
-
-                            <ul className="header__navlist-list">
-                                <li className="header__navbar-item">
-                                    <Link to={'/'} className="header__navbar-item-link"><span>Shops</span></Link>
+                                <li className='navbar__list-item'>
+                                    <i className="fas fa-shopping-bag"></i>
                                 </li>
-                                <li className="header__navbar-item">
-                                    <a href="" className="header__navbar-item-link">
-                                        <span>Offers</span>
-                                    </a>
+                                <li className='navbar__list-item'>
+                                    {/* <i className="far fa-user"></i> */}
+                                    <LoginIcon />
                                 </li>
-                                <li className="header__navbar-item header__navbar-item--separate">
-
-                                    <Link to={'/faq'} className="header__navbar-item-link"><span>FAQ</span></Link>
-
-                                </li>
-                                <li className="header__navbar-item ">
-                                    <Link to={'/contact'} className="header__navbar-item-link" >
-                                        <span>Contact</span>
-                                    </Link>
-                                </li>
-                                <li className="header__navbar-item text--strong">
-                                    {/* <button type="button" className="btn btn-danger" style={{width: '50px',height: '30px'}} onClick={()=>this.handleShowLogin()} >Join</button> */}
-                                    <Login />
-                                </li>
-
                             </ul>
                         </nav>
-                    </div>
-
-                </header>
-
-
-
-                <footer className="footer">
-                    <nav className='bottom__navbar'>
-                        <ul className='navbar__list'>
-                            <li className='navbar__list-item'>
-                                <i className="fas fa-bars"></i>
-                            </li>
-                            <li className='navbar__list-item'>
-                                <i className="fas fa-search"></i>
-                            </li>
-                            <li className='navbar__list-item'>
-                                <i className="fas fa-home"></i>
-                            </li>
-
-                            <li className='navbar__list-item'>
-                                <i className="fas fa-shopping-bag"></i>
-                            </li>
-                            <li className='navbar__list-item'>
-                                <i className="far fa-user"></i>
-                            </li>
-                        </ul>
-                    </nav>
-                </footer>
-
+                    </footer>
+                </div>
             </>
         )
     }

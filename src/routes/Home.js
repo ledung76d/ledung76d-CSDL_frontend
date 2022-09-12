@@ -55,7 +55,7 @@ class Home extends React.Component {
                     <HomeSearch searchProduct={this.searchProduct} />
                     <Slider />
                     <div className='row'>
-                        <div className='col-sm-2 sidebar'>
+                        <div className=' sidebar'>
                             <div className='sidebar__fixed'>
                                 <SideBar changeCategory={this.changeCategory} />
                             </div>

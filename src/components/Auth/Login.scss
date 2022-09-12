@@ -12,7 +12,9 @@
 .btn-formLogin {
     float: right;
 }
-
+.btn-login{
+    display: hidden;
+}
 
 .login-background {
 
@@ -38,9 +40,23 @@
                 text-align: center;
                 font-weight: 800;
                 font-size: 24px;
-
+                position: relative;
                 .login-logo {
                     height: 20px;
+                }
+                //css login icon
+                .login-close{
+                    position: absolute;
+                    top: -32px;
+                    right: -20px;
+                    i{
+                        font-size: 20px;
+                        padding: 4px;
+                        cursor: pointer;
+                    }
+                    i:hover{
+                        color:#009f7f;
+                    }
                 }
             }
 
@@ -374,3 +390,33 @@
     }
 
 }
+.modal-dialog {
+    // width: 1000px !important;
+}
+
+//Mobile
+@media (max-width: 46.1875em) {
+
+
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+
+}
+
+
+// PC
+@media (min-width:  64em) {
+    .login-background {
+        .login-container {
+            .login-content {
+                .login-close{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
