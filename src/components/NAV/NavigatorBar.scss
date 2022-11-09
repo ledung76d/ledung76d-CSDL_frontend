@@ -74,17 +74,22 @@
             margin: 0;
             padding: 6px 8px;
             bottom: 0;
+            a{
+                color: #000;
+            }
             .navbar__list-item{
                 padding: 8px;
                 align-items: center;
                 list-style-type: none;
                 font-size: 20px;
                 cursor: pointer;
-            }
-            .navbar__list-item:hover{
-                color: #2eb097;
+                color: #000;
+                :hover{
+                    color: #2eb097;
 
+                }
             }
+
         }
     }
 }
@@ -135,7 +140,7 @@
         }
     }
     .footer{
-        // display: none;
+        display: none;
     }
 }
 

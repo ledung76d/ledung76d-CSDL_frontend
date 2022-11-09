@@ -62,16 +62,20 @@ class Home extends React.Component {
 
                         </div>
                         <div className=' item-container'>
-                            {arrProducts.map((item, index) => {
-                                return (
-                                    <ViewProduct product={item} key={uuidv4()} />
-                                )
-                            })}
+                            <div className='item-container-product'>
+                                {arrProducts.map((item, index) => {
+                                    return (
+                                        <ViewProduct product={item} key={uuidv4()} />
+                                    )
+                                })}
+                            </div>
+
                         </div>
                     </div>
 
                     <div className='cart-shopping'>
                         <ProductCart />
+
                     </div>
                 </div>
             </>

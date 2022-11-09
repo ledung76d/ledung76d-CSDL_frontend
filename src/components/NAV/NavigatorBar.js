@@ -7,6 +7,7 @@ import LogoShop from '../../assets/images/PickBazar.png';
 import Login from '../Auth/Login';
 import { Link } from 'react-router-dom'
 import LoginIcon from '../Auth/LoginIcon';
+import IconCart from '../ProductCart/IconCart';
 
 class NavigatorBar extends Component {
     constructor(props) {
@@ -113,11 +114,14 @@ class NavigatorBar extends Component {
                                     <i className="fas fa-search"></i>
                                 </li>
                                 <li className='navbar__list-item'>
-                                    <i className="fas fa-home"></i>
+                                    <a href='#' >
+                                        <i className="fas fa-home"></i>
+                                    </a>
                                 </li>
 
                                 <li className='navbar__list-item'>
-                                    <i className="fas fa-shopping-bag"></i>
+                                    {/* <i className="fas fa-shopping-bag"></i> */}
+                                    <IconCart />
                                 </li>
                                 <li className='navbar__list-item'>
                                     {/* <i className="far fa-user"></i> */}

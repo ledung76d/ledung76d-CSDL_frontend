@@ -169,7 +169,11 @@ class Login extends Component {
                             onClick={() => this.handleShowLogin()} >
                             Login
                         </button>}
-                    <Modal funk='true' isOpen={this.state.modal} toggle={() => this.setState({ modal: !this.state.modal })} className={'abcModalClass'} >
+                    <Modal
+                        funk='true' isOpen={this.state.modal}
+                        toggle={() => this.setState({ modal: !this.state.modal })}
+                        centered
+                    >
                         {!this.state.isShowModalForgotPassword ?
                             <div className='login-background' >
                                 <div className='login-container' >

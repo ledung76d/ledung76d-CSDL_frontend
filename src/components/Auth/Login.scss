@@ -15,6 +15,13 @@
 .btn-login{
     display: hidden;
 }
+.btn-loginIcon{
+    border: none;
+    background-color: #fff;
+    :hover{
+        color: #009f7f;
+    }
+}
 
 .login-background {
 
@@ -394,10 +401,17 @@
     // width: 1000px !important;
 }
 
+
 //Mobile
 @media (max-width: 46.1875em) {
 
-
+    .modal{
+        background: #fff;
+        overflow: hidden;
+        .modal-dialog{
+            max-width: 100%;
+        }
+    }
 }
 // Tablet
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
